@@ -1,0 +1,559 @@
+@font-face 
+    font-family: "Gilroy"
+    src: url('../font/Gilroy-Bold.woff')
+    font-style: normal
+    font-weight: bold
+@font-face 
+    font-family: "Gilroy"
+    src: url('../font/Gilroy-Medium.woff')
+    font-style: normal
+    font-weight: medium
+@font-face 
+    font-family: "Gilroy"
+    src: url('../font/Gilroy-Regular.woff')
+    font-style: normal
+    font-weight: Regular
+@font-face 
+    font-family: "Gilroy"
+    src: url('../font/Gilroy-SemiBold.woff')
+    font-style: normal
+    font-weight: semiBold
+@font-face 
+    font-family: "Gilroy"
+    src: url('../font/Gilroy-Light.woff')
+    font-style: normal
+    font-weight: Light
+
+*
+    font-family: 'Gilroy', sans-serif
+
+.center
+    padding-left: calc(50% - 640px)
+    padding-right: calc(50% - 640px)
+
+.title
+    margin-bottom: 17px
+    font-size: 45px
+    font-weight: 800
+    span
+        padding: 5px
+        border: 1.2px #F25822 solid
+        border-radius: 50%
+
+.subtitle
+    font-size: 18px
+    font-weight: 500
+    color: #888888
+
+.btn
+    background: #F25822
+    width: 120px
+    height: 40px
+    border-radius: 30px
+    color: #fff
+    transition: .5s
+    &__white
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 15px
+        width: 165px
+        height: 50px
+        border-radius: 30px
+        font-size: 15px
+        font-weight: bold
+        color: #888888
+        transition: .5s
+    &__white:hover
+        border: 1px #F25822 solid
+        transform: scale(1.05)
+        box-shadow: 4px 2px 2px #888888
+.btn:hover   
+    transform: scale(1.05)
+    box-shadow: 4px 2px 2px #888888
+
+.header
+    padding: 30px 0 20px 0px
+    display: flex
+    justify-content: space-between
+    &__link
+        margin-right: 34px
+        color: #000000
+        font-size: 14px
+        font-weight: regular
+        display: inline-block
+        transition: .4s
+    &__link:hover
+        color: #F25822
+        transform: scale(1.2)
+    &__link:first-child
+        color: #F25822
+        padding-right: 3px
+    &__link:first-child:hover
+        border-radius: 20px
+        box-shadow: 4px 2px 2px #F25822
+
+.top
+    &__content
+        margin-top: 24px
+        margin-bottom: 70px
+        display: flex
+        flex-direction: row  
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        gap: 39px
+        .btn
+            width: 140px
+            height: 50px
+    &__wrapper
+        flex-wrap: wrap
+        margin-top: 120px
+        width: 543px
+    .subtitle
+        margin-bottom: 37px
+    .title
+        font-size: 60px
+        font-weight: bold
+
+.buttons
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    gap: 20px
+    .btn
+        font-size: 15px
+        font-weight: bold
+
+.logos
+    padding: 60px 0px 90px 0px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    img:not(:last-child)
+        margin-right: 48px
+
+.solution
+    background: #FAFAFA
+    &__content
+        position: relative
+        display: flex
+        justify-content: space-between
+        flex-direction: row  
+        flex-wrap: wrap
+        align-items: center
+        z-index: 10
+    .subtitle
+        margin-bottom: 37px
+
+    &__info
+        margin-right: 20px
+        width: 515px
+        .title
+            font-size: 45px
+    &__img
+        width: 715px
+    &__ellipse
+        width: 720px
+        height: 378px
+        position: absolute
+        border: .5px #666666 solid
+        border-radius: 50%
+        transform: rotate(20deg)
+        left: -100px
+        opacity: 40%
+        z-index: -1
+        
+.offers
+    &__wrapper
+        margin: 100px 0px 100px 0px 
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__item
+        width: 310px
+        border-radius: 8px
+        transition: .3s
+        padding: 40px 10px 25px 20px
+        &_square1
+            margin-bottom: 20px
+            position: relative
+            width: 70px
+            height: 70px
+            text-align: center
+            background: #F25822
+            border-radius: 15px
+        &_square2
+            margin-bottom: 20px
+            position: relative
+            width: 70px
+            height: 70px
+            text-align: center
+            background: #BDE0BC
+            border-radius: 15px
+        &_square3
+            margin-bottom: 20px
+            position: relative
+            width: 70px
+            height: 70px
+            text-align: center
+            background: #FFF3C9
+            border-radius: 15px
+    &__item:hover
+        box-shadow: 14px 14px 14px 10px #cccccc
+        transform: scale(1.01)
+    &__img
+        margin-bottom: 10px
+        position: relative
+        top: 22px
+    h2
+        margin-bottom: 17px
+    .subtitle
+        margin-bottom: 25px
+        font-size: 15px
+    &__read-more
+        font-size: 12px
+        font-weight: 700
+        a
+            color: #000
+            
+.opacity
+    position: absolute
+    width: 100%
+    height: 100%
+    border-radius: 15px
+    background: white
+    opacity: 0.7
+    z-index: 0
+                
+.choose
+    padding: 92px 0 100px 0
+    background: #FAFAFA
+    .title
+        text-align: center
+        font-size: 45px
+    .subtitle
+        text-align: center
+        margin-bottom: 55px
+    &__content
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__item
+        width: 370px
+        background: #fff
+        padding-bottom: 45px
+        transition: .4s
+    &__item:hover
+        box-shadow: 14px 14px 14px 10px #cccccc
+        transform: scale(1.01)
+    &__title
+        padding-top: 25px
+        font-size: 24px
+        font-weight: 700
+        text-align: center
+
+
+    &__subtitle
+        padding: 22px 10px 0px 10px
+        font-size: 15px
+        font-weight: 500
+        text-align: center
+        color: #888888
+
+    &__btn
+        margin: 0 auto
+        margin-top: 39px
+        display: block
+        
+.you
+    padding-top: 80px
+    display: flex
+    justify-content: right
+    // flex-wrap: wrap
+    // background: url(../img/you/you.jpg) no-repeat
+    .title
+        font-size: 45px
+    .subtitle
+        font-size: 16px
+        font-weight: 700
+    &__info
+        width: 600px
+    &__box-items
+        width: 560px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin-top: 70px
+        padding-left: 20px
+    &__circle
+        min-width: 100px
+        height: 100px
+        text-align: center
+        background-color: #FCD5C8
+        border-radius: 50%
+        padding-top: 30px
+        margin-right: 15px
+        &_2
+            background: #BDE0BC
+        &_3
+            background: #FFF3C9
+    &__item
+        padding: 15px
+        display: flex
+        margin-bottom: 40px
+        border-radius: 4px
+        transition: .2s
+        &_title
+            font-size: 20px
+            font-weight: 700
+            margin-bottom: 8px
+    &__item-text
+        font-size: 14px
+    &__item:hover
+        box-shadow: 14px 14px 14px 10px #cccccc
+        transform: scale(1.01)
+    &__text-box
+        padding: 6px
+
+.numbers
+    padding-top: 100px
+
+    &__content
+        padding: 43px 76px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        border: 2px #EEEEEE solid
+        color: #666666
+        margin-bottom: 100px
+    &__circle
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        &_1
+            background-color: #F3602D
+        &_2
+            background-color: #149211
+        &_3
+            background-color: #FFC700
+    &__title
+        font-size: 70px
+        font-weight: 700
+        text-align: center
+        
+.check
+    min-height: 558px
+    &__content
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+    &__item
+        width: 567px
+    &__input
+        width: 190px
+        height: 55px
+        background-color: #E1E1E1
+        padding-left: 20px
+        &_left
+            border-top-left-radius: 30px
+            border-bottom-left-radius: 30px
+            border-right: 1.5px #CCCCCC solid
+        &_right
+            border-top-right-radius: 30px
+            border-bottom-right-radius: 30px
+    .btn
+        height: 55px
+        width: 155px
+        margin-left: 30px
+
+    img
+        width: 700px
+    &__form
+        margin-top: 55px
+        display: flex
+        // justify-content: space-between
+
+.plans
+    background: #FAFAFA
+    padding-top: 83px
+    padding-bottom: 130px
+    .title
+        text-align: center
+    .subtitle
+        text-align: center
+        margin-bottom: 56px
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        padding-top: 60px
+        width: 370px
+        text-align: center
+    &__item:hover
+        box-shadow: 14px 14px 14px 10px #cccccc
+        transform: scale(1.01)
+        .plans__title
+            color: #F25822
+    &__title
+        margin-bottom: 16px
+        font-size: 24px
+        font-weight: 500
+    &__price
+        height: 120px
+        position: relative
+        
+    &__span2
+        font-size: 70px
+        margin-left: 20px
+        font-weight: 700
+    &__span1
+        position: absolute
+        font-size: 24px
+        top: 14px
+    &__text
+        line-height: 40px
+        margin-bottom: 27px
+        color: #666666
+        font-size: 16px
+    .btn
+        width: 200px
+        height: 50px
+        background-color: #FCD5C8
+        color: #F25822
+        margin-bottom: 70px
+    .btn:hover
+        background-color: #F25822
+        color: #fff
+    
+.expert-team
+    margin-bottom: 100px
+    margin-top: 80px
+    .title
+        text-align: center
+    .subtitle
+        text-align: center
+        margin-bottom: 52px
+    &__content
+        display: flex
+        justify-content: space-between
+    &__item
+        padding-top: 50px
+        padding-bottom: 50px
+        width: 270px
+        text-align: center
+    &__item:hover
+        box-shadow: 14px 14px 14px 10px #cccccc
+        transform: scale(1.01)
+        .expert-team__title
+            color: #F25822
+    &__socials
+        // width: 100px
+        display: flex
+        justify-content: center
+        gap: 16px
+    &__icon-img
+        width: 25px
+        height: 25px
+        border-radius: 50%  
+        transition: .5s
+    &__icon-img:hover
+        padding: 2.5px
+        background: #F25822
+        color: #fff
+        transform: scale(1.5)
+            
+    &__facebook-img
+        background: #F25822
+    &__circle
+        width: 130px
+        margin: 0 auto
+        margin-bottom: 14px
+    &__title
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 8px
+    &__subtitle
+        margin-bottom: 17px
+        
+.footer
+    background-color: #F3F3F3
+    // height: 500px
+    padding-top: 97px
+    &__content
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+        grid-gap: 1rem
+        // gap: 10px
+    &__item
+        // background: #fff
+        .expert-team__socials
+            justify-content: start
+        span
+            color: #888888
+    &__logo
+        margin-bottom: 30px
+    &__title
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 34px
+        margin-top: 13px
+    &__p
+        margin-bottom: 10px
+        line-height: 24px
+        font-size: 16px
+        color: #666666
+    ul
+        margin-left: 16px
+    p
+        margin-bottom: 10px
+    &__li
+        list-style-type: disc
+        color: #F25822
+        margin-bottom: 10px
+        span
+            color: #666666
+            font-weight: 500
+            font-size: 15px
+    hr
+        margin: 60px 0
+        height: 1px
+        border-top: 1px solid #CCCCCC
+        // border-bottom: 1px solid #666666
+    &__copyright
+        text-align: center
+        color: #888888
+    
+    
+        
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+// .try
+//     margin-top: 443px
+//     margin-bottom: 403px
+//     display: flex
+//     flex-direction: row  
+//     flex-wrap: wrap
+//     justify-content: center
+//     align-items: center
+//     gap: 22px
+    
+
